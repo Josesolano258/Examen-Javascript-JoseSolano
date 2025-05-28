@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Momentum - Tablero Kanban</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!--Navegacion Nav con botones iniciar seccion y registrar-->
+    <header>
+        <h1>Momentum - Tablero Kanban</h1>
+        <nav>
+            <button id="login-btn">Iniciar Sesión</button>
+            <button id="register-btn">Registrarse</button>
+        </nav>
+    </header>
+    <main>
+        <!--Tarjetas donde van las tareas-->
+        <section class="kanban-board">
+            <div class="kanban-column" id="pending-tasks">
+                <h2 class=>Pendientes</h2>
+                <div class="task-list"></div>
+                <button class="add-task-btn" data-column="pending">Agregar Tarea</button>
+            </div>
+            <div class="kanban-column" id="in-progress-tasks">
+                <h2 class>En Progreso</h2>
+                <div class="task-list"></div>
+                <button class="add-task-btn" data-column="in-progress">Agregar Tarea</button>
+            </div>
+            <div class="kanban-column" id="completed-tasks">
+                <h2 class=>Completadas</h2>
+                <div class="task-list"></div>
+                <button class="add-task-btn" data-column="completed">Agregar Tarea</button>
+            </div>
+        </section>
+    </main>
+
+    <!--Footer el pie de pagina-->
+    <footer>
+        <p>&copy; 2025 Momentum - Agencia de Eventos - Jose Solano</p>
+    </footer>
+
+    <!--Scrip con funcionalidades-->
+    <script src="js/user.js"></script>
+    <script src="js/kanban.js"></script> 
+    <script src="js/app.js"></script>
+</body>
+</html>
